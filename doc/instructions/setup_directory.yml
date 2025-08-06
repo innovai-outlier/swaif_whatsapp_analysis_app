@@ -1,0 +1,13 @@
+instruction: "Setup do Diretório"
+description: >
+  Crie a estrutura de diretórios e arquivos necessários para o projeto.
+commands:
+  - mkdir -p lite/modules/{database,analysis,utils,trello_integration}
+  - mkdir -p lite/tests
+  - mkdir -p heavy/{workflows/nodes,scripts}
+  - mkdir docs tests
+  - touch lite/app.py lite/requirements.txt lite/README.md
+  - touch heavy/docker-compose.yml heavy/README.md
+  - touch README.md .gitignore
+notes: >
+  Certifique-se de que todos os diretórios e arquivos foram criados corretamente.

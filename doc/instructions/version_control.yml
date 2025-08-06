@@ -1,0 +1,12 @@
+instruction: "Controle de Versão com Git"
+description: >
+  Inicialize o repositório Git e configure a integração com o GitHub.
+commands:
+  - git init
+  - git add .
+  - git commit -m "Inicializando o projeto com a estrutura proposta"
+  - git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+  - git branch -M main
+  - git push -u origin main
+notes: >
+  Substitua SEU_USUARIO e NOME_DO_REPOSITORIO pelos valores corretos.

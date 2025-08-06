@@ -1,0 +1,26 @@
+# Template para Conteúdo Alinhado (Instruções da Médica para a Secretária)
+
+Utilize este arquivo para listar as principais diretrizes, frases-chave, tópicos ou informações que a Dra. Cristal treina a secretária para utilizar nas conversas com os pacientes. Cada item deve ser uma frase ou um parágrafo que represente uma instrução clara.
+
+Exemplos:
+
+- "Sempre perguntar o motivo principal que faz o paciente buscar o acompanhamento da Dra. Cristal."
+- "Explicar detalhadamente como funcionam os atendimentos, incluindo a personalização da consulta e os 4 pilares (físico, emocional, hábitos de vida e relacionamentos)."
+- "Informar sobre o valor da consulta e as opções de pagamento (PIX, cartão de crédito/débito), e mencionar a nota fiscal para reembolso."
+- "Oferecer o pós-consulta ativo via WhatsApp e o retorno online sem custo adicional dentro de 30 dias."
+- "Ao agendar, sempre verificar a disponibilidade do paciente antes de propor um horário específico."
+- "Em casos de dúvidas sobre exames, sugerir que a Dra. pode adiantar os pedidos de exames."
+
+---
+
+**Instruções:**
+
+1.  Apague este cabeçalho e os exemplos acima.
+2.  Liste cada instrução ou ponto de alinhamento em uma nova linha ou parágrafo.
+3.  Seja o mais específico possível para garantir uma melhor detecção do alinhamento.
+4.  Salve o arquivo com o nome `aligned_content.txt` no mesmo diretório dos scripts.
+
+---
+
+
+

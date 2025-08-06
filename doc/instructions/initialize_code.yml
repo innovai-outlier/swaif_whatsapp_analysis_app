@@ -1,0 +1,11 @@
+instruction: "Configuração Inicial do Código"
+description: >
+  Use o GitHub Copilot para gerar templates básicos para os arquivos criados.
+actions:
+  - Open lite/app.py and add a comment describing its purpose.
+  - Use Copilot to generate a basic Streamlit app structure.
+  - Open heavy/scripts/workflow_generator.py and add a comment describing its purpose.
+  - Use Copilot to generate functions for creating and assembling N8N workflows.
+notes: >
+  Certifique-se de que os comentários sejam claros e que o código gerado esteja alinhado
+  com os objetivos do projeto.

@@ -1,0 +1,1253 @@
+[
+  {
+    "duration_minutes": 67815.26666666666,
+    "total_messages": 186,
+    "secretary_messages": 81,
+    "patient_messages": 105,
+    "num_interactions": "103",
+    "agendamento_keywords": 43,
+    "preco_keywords": 9,
+    "audio_media_messages": "3",
+    "patient_questions": "23",
+    "secretary_questions": "44",
+    "resumo_diario": "Conversa de 06/11/2024 entre Dra Cristal Endocrinologista e # Fer. Tópicos discutidos: agendamento, preços, sintomas, exames. Status: agendamento em andamento.",
+    "pendencias": [
+      {
+        "descricao": "Ahh minha amiga, completamente normal... rs\nVc veio ao local certo! 🤗\n\nFunciona assim: na primeira c...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Qual o valor de exame de bioimpedancia?",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Fer, essa consulta pode ser tanto presencial quanto online, tem o valor de 650 reais, e na consulta ...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Fer, essa consulta pode ser tanto presencial quanto online, tem o valor de 650 reais, e na consulta ...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Perfeito Fer... vc teria disponibilidade para amanhã, 07/11 às 11h?",
+        "responsavel": "secretaria",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ah entendi... nessa sexta a Dra. não estará no consultório :(\n\nMas podemos fazer o seguinte, se quis...",
+        "responsavel": "secretaria",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ah entendi... nessa sexta a Dra. não estará no consultório :(\n\nMas podemos fazer o seguinte, se quis...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ah entendi... nessa sexta a Dra. não estará no consultório :(\n\nMas podemos fazer o seguinte, se quis...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Perfeito Fer... a Dra. vai fazer os pedidos de exames e vc recebe por sms tá, pois são digitais",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Agendado então Fer 🌹\n\nData: 18/11/2024 - 15:00\nProfissional: Dra. Cristal Peters Cabral\nPaciente: Fe...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Agendado então Fer 🌹\n\nData: 18/11/2024 - 15:00\nProfissional: Dra. Cristal Peters Cabral\nPaciente: Fe...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Olá Fernanda, bom dia! Tudo bem?\n\nHoje, 18/11 às 15h, temos o momento tão esperado da sua consulta! ...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ahh que ótimo Fer! 🫶\n\nLembrando que estou aqui para auxiliá-la a qualquer momento. Além disso, todas...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Fer, a Dra. disse que ia mesmo entrar em contato com vc...\nClaro, veja o que é possível para você no...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Fer, o valor normal já são R$ 600,00. Ela fez R$ 500,00 pra vc",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Podemos agendar sua aplicação para o próximo sábado, 14/12 às 11:00h?",
+        "responsavel": "secretaria",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Oi Fer, bom dia! Tudo bem?\nA Sol por aqui... 😊\nPassando pra saber se podemos agendar sua aplicação p...",
+        "responsavel": "secretaria",
+        "tipo": "agendamento",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "success"
+  },
+  {
+    "duration_minutes": 127418.03333333334,
+    "total_messages": 310,
+    "secretary_messages": 141,
+    "patient_messages": 169,
+    "num_interactions": "170",
+    "agendamento_keywords": 76,
+    "preco_keywords": 10,
+    "audio_media_messages": "13",
+    "patient_questions": "25",
+    "secretary_questions": "63",
+    "resumo_diario": "Conversa de 11/11/2024 entre Dra Cristal Endocrinologista e # Gabi Guedes. Tópicos discutidos: agendamento, preços, sintomas, exames. Status: agendamento em andamento.",
+    "pendencias": [
+      {
+        "descricao": "Funciona assim: na primeira consulta, que pode ser online ou presencial, a Dra. Cristal se dedica a ...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Gostaria de saber se a Dra Cristal aceita algum convênio médico e, caso não aceite, qual é o valor d...",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Bem vinda Gabi! 💐\n\nJá vou te passar todas as informações, mas para começarmos, como os atendimentos ...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Qual é o valor da consulta?",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Que ótimo Gabi! 😊\n\nEssa consulta pode ser tanto presencial quanto online, tem o valor de 650 reais, ...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Que ótimo Gabi! 😊\n\nEssa consulta pode ser tanto presencial quanto online, tem o valor de 650 reais, ...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ah, entendi. Veja, por favor, se consegue marcar para a primeira segunda-feira de dezembro, na parte...",
+        "responsavel": "paciente",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Marcadinho Gabi 🌹\n\nData: 02/12/2024 - 15:00\nProfissional: Dra. Cristal Peters Cabral\nPaciente: Gabri...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Olá Gabi, bom dia! Tudo bem? 😊\n\nHoje, às 15:00h temos o momento tão esperado da sua consulta online ...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "650 o pix, né?",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Combinei com a doutora de ser presencial para que eu possa fazer a bioimpedância",
+        "responsavel": "paciente",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Eu posso ir em algum momento na clínica fazer a bioimpedância.",
+        "responsavel": "paciente",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Veja se é possível: eu faço somente a bioimpedância na quinta e a consulta online na segunda.",
+        "responsavel": "paciente",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Marcadinho Gabi 🌹\n\nData: 05/12/2024 - 12:30h\nProfissional: Dra. Cristal Peters Cabral\nPaciente: Gabr...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Marcadinho Gabi 🌹\n\nData: 05/12/2024 - 12:30h\nProfissional: Dra. Cristal Peters Cabral\nPaciente: Gabr...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Gabi, seguem algumas orientações de preparo para a realização da bioimpedância. Isso garante um resu...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Eu fiz o exame de bioimpedância hoje e pego os meus exames de sangue até terça-feira da seman que ve...",
+        "responsavel": "paciente",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Mas é online... Eu já fiz a bioimpedância, a consulta agora é só para ela ver meus exames...",
+        "responsavel": "paciente",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Marcadinho Gabi 🌹\n\nData: 11/12/2024 - 15:00\nProfissional: Dra. Cristal Peters Cabral\nPaciente: Gabri...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Vou fazer o pagamento dos procedimentos",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "O pix da Dra. Cristal é 24.204.219/0001-70?",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Gabi, podemos agendar sua aplicação no sábado às 10:45h?",
+        "responsavel": "secretaria",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Segue o comprovante do pagamento da próxima medicação. Muito grata!!!",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Então, como vou pagar no cartão desta vez, queria que me mandasse o link para pagamento. Obrigada!",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Segue o link para pagamento, Gabi 😘",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "No cartão a vista Gabi?",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Segue o link de pagamento, Gabi 🥰",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Me mande, por favor, o link de pagamento.",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Me mande depois o link de pagamento. Nesta semana vou de pix",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "NIPE SERVIÇOS MÉDICOS\nCNPJ: 24.204.219/0001-70\nChave PIX 24204219000170\n‎[31/01/2025, 13:41:24] # Ga...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ótimo, Gabi!! Vamos manter então a dose e vou te passar uma receita pra ajudar na azia, tá?",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "success"
+  },
+  {
+    "duration_minutes": 41813.01666666667,
+    "total_messages": 126,
+    "secretary_messages": 74,
+    "patient_messages": 52,
+    "num_interactions": "83",
+    "agendamento_keywords": 64,
+    "preco_keywords": 11,
+    "audio_media_messages": "0",
+    "patient_questions": "13",
+    "secretary_questions": "37",
+    "resumo_diario": "Conversa de 09/01/2025 entre Dra Cristal Endocrinologista e # Marycel E B Cotrim. Tópicos discutidos: agendamento, preços, sintomas, exames. Status: agendamento em andamento.",
+    "pendencias": [
+      {
+        "descricao": "Boa tarde,\nGostaria de agendar uma consulta.\nGostaria de informações sobre o valor da consulta.",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Bem vinda Marycel! 💐\n\nJá vou te passar todas as informações, mas para começarmos, como os atendiment...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Funciona assim: é realizada uma pré-consulta online rápida, com duração de no máximo 15 minutos para...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Essa é só uma primeira avaliação rápida, para análise das suas demandas e pedidos de exames, e já es...",
+        "responsavel": "secretaria",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Essa é só uma primeira avaliação rápida, para análise das suas demandas e pedidos de exames, e já es...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Essa é só uma primeira avaliação rápida, para análise das suas demandas e pedidos de exames, e já es...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ótimo.\nPodemos agendar.",
+        "responsavel": "paciente",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Marcadinho Marycel🌹\n\nData: 13/01/2025 - 15:00\nProfissional: Dra. Cristal Peters Cabral\nPaciente: Mar...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "O pagamento deve ser realizado antes da primeira consulta online, mas pode ser no dia da consulta.",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Sol: Olá Marycel, bom dia! Tudo bem? 😊\n\n*Hoje às 16:00h*, temos o momento tão esperado do seu primei...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Lembrando que esse valor pode ser no PIX ou se preferir enviamos o link para pagamento no cartão tá",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Boa tarde!\nVc poderia enviar o link para pagamento no cartão.",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Claro, seria à vista no cartão?",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Já efetuei o pagamento.\nObrigada",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Oi Marycel, bom dia! Ahh que ótimo 🫶\n\nLembrando que estou aqui para auxiliá-la a qualquer momento. A...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "E podemos agendar nesta data?",
+        "responsavel": "secretaria",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Marcadinho Marycel 🌹\n\nData: 04/02/2025 - 14:00\nProfissional: Dra. Cristal Peters Cabral\nPaciente: Ma...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Sol: Oi Marycel, boa tarde! Tudo bem?\nSegue sua bioimpedância, para acompanhamento da sua evolução 😉...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "success"
+  },
+  {
+    "duration_minutes": 47739.23333333333,
+    "total_messages": 58,
+    "secretary_messages": 32,
+    "patient_messages": 26,
+    "num_interactions": "38",
+    "agendamento_keywords": 41,
+    "preco_keywords": 8,
+    "audio_media_messages": "1",
+    "patient_questions": "8",
+    "secretary_questions": "20",
+    "resumo_diario": "Conversa de 01/01/2025 entre Dra Cristal Endocrinologista e ~Fernando. Tópicos discutidos: agendamento, preços, sintomas, exames. Status: agendamento em andamento.",
+    "pendencias": [
+      {
+        "descricao": "Gostaria de mais informações sobre o atendimento e valores para poder me consultar.",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Olá, tudo bem? Com quem falo, por favor?\n\nJá vou te passar todas as informações, mas para começarmos...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Funciona assim, na primeira consulta, a Dra. Cristal se dedica a compreender minuciosamente as suas ...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Que ótimo Fernando 😊\n\nEssa consulta pode ser tanto presencial quanto online, tem o valor de 650 reai...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Que ótimo Fernando 😊\n\nEssa consulta pode ser tanto presencial quanto online, tem o valor de 650 reai...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Acredito que seria no presencial mesmo, por conta da bioimpedância.\n\nQuais os dias que trabalham?\nNo...",
+        "responsavel": "paciente",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Podemos tentar agendar então presencialmente na quinta, 09/01 às 12:30h, assim vc já realiza também ...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Marcadinho Fernando 😉\n\nData: 23/01/2025 - 12:30h\nProfissional: Dra. Cristal Peters Cabral\nPaciente: ...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Marcadinho Fernando 😉\n\nData: 23/01/2025 - 12:30h\nProfissional: Dra. Cristal Peters Cabral\nPaciente: ...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Gostaria de saber se vocês aceitam o pagamento por pix?",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Sim Fernando, PIX ou cartão 😉",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Teria como passar a referência do Pix, por favor?!\nQuero já deixar acertado (se não for problema)",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Nenhum problema, Fernando:\n\nNIPE SERVIÇOS MÉDICOS\nCNPJ: 24.204.219/0001-70\nChave PIX:  2420421900017...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Fernando, por acaso vc teria disponibilidade para anteciparmos para às 10:00h?",
+        "responsavel": "secretaria",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Aproveito para encaminhar a avaliação de bioimpedância realizada na consulta, assim você poderá acom...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Sem problemas Fernando.\n\nAgendado então:\n\nData: 03/02/2025 - 14:30\nProfissional: Dra. Cristal Peters...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "success"
+  },
+  {
+    "duration_minutes": 1588.9666666666667,
+    "total_messages": 36,
+    "secretary_messages": 22,
+    "patient_messages": 14,
+    "num_interactions": "24",
+    "agendamento_keywords": 21,
+    "preco_keywords": 8,
+    "audio_media_messages": "0",
+    "patient_questions": "1",
+    "secretary_questions": "12",
+    "resumo_diario": "Conversa de 29/01/2025 entre Dra Cristal Endocrinologista e ~Luciana. Tópicos discutidos: agendamento, preços, sintomas, exames. Status: agendamento em andamento.",
+    "pendencias": [
+      {
+        "descricao": "Oi Sou Luciana. A Dra Marcela, endocrinologista doa meus filhos me indicou a Dra Cristal. Qual o val...",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ja vou te passar o valor e todas as informações, so me diga uma coisa: qual seria seu objetivo com a...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ja vou te passar o valor e todas as informações, so me diga uma coisa: qual seria seu objetivo com a...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Legal, Luciana! Posso te passar os valores e forma de pagamento?",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ah legal, Luciana 😊\n\nEssa consulta pode ser tanto presencial quanto online, tem o valor de 700 reais...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ah legal, Luciana 😊\n\nEssa consulta pode ser tanto presencial quanto online, tem o valor de 700 reais...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Marcadinho Luciana 🌹\n\nData: 30/01/2025 - 11:00\nProfissional: Dra. Cristal Peters Cabral\nPaciente: Lu...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Vou te encaminhar suas receitas e a bioimpedância para seu acompanhamento da sua evolução, ok",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "success"
+  },
+  {
+    "duration_minutes": 93802.28333333334,
+    "total_messages": 109,
+    "secretary_messages": 57,
+    "patient_messages": 52,
+    "num_interactions": "63",
+    "agendamento_keywords": 54,
+    "preco_keywords": 4,
+    "audio_media_messages": "1",
+    "patient_questions": "21",
+    "secretary_questions": "31",
+    "resumo_diario": "Conversa de 10/12/2024 entre Dra Cristal Endocrinologista e ~Ligia. Tópicos discutidos: agendamento, preços, sintomas, exames. Status: agendamento em andamento.",
+    "pendencias": [
+      {
+        "descricao": "Ah legal... teria disponibilidade para a próxima terça, 17/12 às 15h?",
+        "responsavel": "secretaria",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Marcadinho Lígia 🌹\n\nData: 17/12/2024 - 15:00h\nProfissional: Dra. Cristal Peters Cabral\nPaciente: Lig...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Sol passando pra te avisar que infelizmente não vou conseguir mesmo ir amanhã às 13:00 ok. Meus pais...",
+        "responsavel": "paciente",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Boa tarde Lígia, tudo bem?\n\nLogo mais, às *16:00h*, temos o momento tão esperado da sua consulta e q...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Queria saber como poderíamos resolver isso, remarco para outro dia e horário? Ou será que teria disp...",
+        "responsavel": "paciente",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Olá 👋 o médico acabou de confirmar que vai dar certo fazer o procedimento ainda hoje, mas agora esta...",
+        "responsavel": "paciente",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Sem problemas Lígia, cuide da sua filha 🌹\nTem disponibilidade para quinta, 09/01 às 13:00h?",
+        "responsavel": "secretaria",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Remarcado Lígia:\n\nData: 09/01/2025 - quinta-feira, 13:00h\nProfissional: Dra. Cristal Peters Cabral\nP...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Oi Lígia, tudo bem?\n\nLogo mais, às *12:00h*, temos o momento tão esperado da sua consulta e queremos...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "A única coisa é que o plano de saúde exige que os pedidos de exames estejam com a data 🫠😮‍💨\nA receit...",
+        "responsavel": "paciente",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Sol acho que vou preferir fazer a infusão de Ferro e as aplicações das vitaminas aí na clínica mesmo...",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Amore... vamos lá...\n\nO valor pra uma vitamina: 350,00 / 2 Vitaminas: 700,00\n\nPorém a Dra. faz com d...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "success"
+  },
+  {
+    "duration_minutes": 19219.35,
+    "total_messages": 112,
+    "secretary_messages": 55,
+    "patient_messages": 57,
+    "num_interactions": "59",
+    "agendamento_keywords": 35,
+    "preco_keywords": 7,
+    "audio_media_messages": "2",
+    "patient_questions": "5",
+    "secretary_questions": "23",
+    "resumo_diario": "Conversa de 17/12/2024 entre Dra Cristal Endocrinologista e ~Alex. Tópicos discutidos: agendamento, preços, sintomas, exames. Status: agendamento em andamento.",
+    "pendencias": [
+      {
+        "descricao": "Ola,\n\nBom dia,\n\nAgendei consulta para amanhã,quarta feira às 16:00 na vila Olimpia!\nQual o valor da ...",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "O valor da consulta é 650",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Confirmando então o seu agendamento, Alex:\n\nData: 18/12/2024, Quarta-feira\nHora: 16:00h\nProfissional...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "É o mesmo valor, Alex",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Olá Alex, bom dia! Tudo bem?\n\nHoje às 16:00h temos o momento tão esperado da sua consulta! Queremos ...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Aqui está o link para pagamento:\nhttps://api-gateway.c6bank.info/v1/payment/e239508c-a132-4220-92f8-...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Qual o valor",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "O valor do teste é 2 mil e vc pode parcelar no cartão, Alex.\nEmitimos nota fiscal caso tenha reembol...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "E esse o pedido de bioimpedância",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Marcadinho Alex:\n\nData: 30/12/2024 - 15:00\nProfissional: Dra. Cristal Peters Cabral\nPaciente: Alex G...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "success"
+  },
+  {
+    "duration_minutes": 983.45,
+    "total_messages": 22,
+    "secretary_messages": 11,
+    "patient_messages": 11,
+    "num_interactions": "14",
+    "agendamento_keywords": 11,
+    "preco_keywords": 4,
+    "audio_media_messages": "0",
+    "patient_questions": "0",
+    "secretary_questions": "6",
+    "resumo_diario": "Conversa de 10/02/2025 entre Dra Cristal Endocrinologista e ~Pat  Varago. Tópicos discutidos: agendamento, preços, sintomas, exames. Status: interesse em agendamento.",
+    "pendencias": [
+      {
+        "descricao": "Sol: Olá, bom dia! Com quem falo, por favor?\n\nJá vou te passar todas as informações, mas para começa...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ahhh entendi! então vc chegou ao lugar certo Patrícia 🫶\n\nSaiba que a Dra. Cristal é uma endocrinolog...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Que ótimo Patrícia 😊\n\nEssa consulta pode ser tanto presencial quanto online, tem o valor de 700 reai...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Que ótimo Patrícia 😊\n\nEssa consulta pode ser tanto presencial quanto online, tem o valor de 700 reai...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "fail"
+  },
+  {
+    "duration_minutes": 18.266666666666666,
+    "total_messages": 5,
+    "secretary_messages": 2,
+    "patient_messages": 3,
+    "num_interactions": "2",
+    "agendamento_keywords": 2,
+    "preco_keywords": 0,
+    "audio_media_messages": "0",
+    "patient_questions": "0",
+    "secretary_questions": "2",
+    "resumo_diario": "Conversa de 11/02/2025 entre Dra Cristal Endocrinologista e ~Maria lenicesousamaced. Tópicos discutidos: agendamento. Status: interesse em agendamento.",
+    "pendencias": [
+      {
+        "descricao": "Olá Maria, seja muito bem-vinda!!! 🤗💐\n\nJá vou te passar todas as informações, mas para começarmos, c...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "fail"
+  },
+  {
+    "duration_minutes": 290912.75,
+    "total_messages": 55,
+    "secretary_messages": 24,
+    "patient_messages": 31,
+    "num_interactions": "32",
+    "agendamento_keywords": 30,
+    "preco_keywords": 8,
+    "audio_media_messages": "0",
+    "patient_questions": "4",
+    "secretary_questions": "20",
+    "resumo_diario": "Conversa de 24/07/2024 entre Dra Cristal Endocrinologista e ~Rebeca Ribeiro. Tópicos discutidos: agendamento, preços, sintomas, exames. Status: agendamento em andamento.",
+    "pendencias": [
+      {
+        "descricao": "Bom dia Rebeca! Seja muito bem-vinda! 🤗\n\nEu sou a Aline, assistente da Dra. Cristal e estou aqui par...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Funciona assim, na primeira consulta, a Dra. se dedica a compreender minuciosamente as suas necessid...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Qual o valor da consulta por gentileza?",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Rebeca, essa consulta pode ser presencial ou online e tem o valor de 650 reais. O pagamento pode ser...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Sol: Olá Rebeca, bom dia! Tudo bem? 😊\nVocê tem disponibilidade para segunda-feira, 27/01 às 16:00h?",
+        "responsavel": "secretaria",
+        "tipo": "agendamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ah legal Rebeca 👏\n\nPara concluir seu agendamento preciso apenas de algumas informações para fins de ...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Marcadinho Rebeca 🌹\n\nData: 11/02/2025 - 16:00\nProfissional: Dra. Cristal Peters Cabral\nPaciente: Reb...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Qual será sua forma de pagamento, Rebeca?",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Sol: Olá Rebeca, bom dia! Tudo bem?\n\nLogo mais, às 16:00h temos o momento tão esperado da sua consul...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "fail"
+  },
+  {
+    "duration_minutes": 1203.55,
+    "total_messages": 17,
+    "secretary_messages": 9,
+    "patient_messages": 8,
+    "num_interactions": "8",
+    "agendamento_keywords": 11,
+    "preco_keywords": 6,
+    "audio_media_messages": "0",
+    "patient_questions": "2",
+    "secretary_questions": "4",
+    "resumo_diario": "Conversa de 10/02/2025 entre Dra Cristal Endocrinologista e ~Sueli Saladini. Tópicos discutidos: agendamento, preços, sintomas, exames. Status: interesse em agendamento.",
+    "pendencias": [
+      {
+        "descricao": "Olá Sueli, bom dia! Seja bem vinda!!! 💐\n\nJá vou te passar todas as informações, mas para começarmos,...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Qual o valor da consulta?",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Ahhh entendi! Então vc chegou ao lugar certo Sueli 🫶\n\nSaiba que a Dra. Cristal é uma endocrinologist...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Qual o valor da consulta?",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Essa consulta pode ser tanto presencial quanto online, tem o valor de 700 reais, e na consulta prese...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Essa consulta pode ser tanto presencial quanto online, tem o valor de 700 reais, e na consulta prese...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "fail"
+  },
+  {
+    "duration_minutes": 2182.6666666666665,
+    "total_messages": 17,
+    "secretary_messages": 10,
+    "patient_messages": 7,
+    "num_interactions": "10",
+    "agendamento_keywords": 12,
+    "preco_keywords": 6,
+    "audio_media_messages": "0",
+    "patient_questions": "1",
+    "secretary_questions": "6",
+    "resumo_diario": "Conversa de 09/02/2025 entre Dra Cristal Endocrinologista e ~Renata. Tópicos discutidos: agendamento, preços, sintomas, exames. Status: interesse em agendamento.",
+    "pendencias": [
+      {
+        "descricao": "Olá, conheci a Dra. Cristal pelo Google e gostaria de saber o valor da consulta, por gentileza.",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Sol: Olá, bom dia! Com quem falo, por favor?\n\nJá vou te passar todas as informações, mas para começa...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Perfeito Renata, saiba que a Dra. Cristal é uma endocrinologista especialista nesse assunto tem ajud...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Sim… faz sentido.\n\nQual o valor da consulta dela… presencial e online, por gentileza?",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Legal Renata... essa consulta pode ser tanto presencial quanto online, tem o valor de 700 reais, e n...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Legal Renata... essa consulta pode ser tanto presencial quanto online, tem o valor de 700 reais, e n...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "fail"
+  },
+  {
+    "duration_minutes": 1331.8166666666666,
+    "total_messages": 14,
+    "secretary_messages": 8,
+    "patient_messages": 6,
+    "num_interactions": "10",
+    "agendamento_keywords": 12,
+    "preco_keywords": 5,
+    "audio_media_messages": "0",
+    "patient_questions": "1",
+    "secretary_questions": "4",
+    "resumo_diario": "Conversa de 10/02/2025 entre Dra Cristal Endocrinologista e ~Karin Saraiva. Tópicos discutidos: agendamento, preços, sintomas, exames. Status: interesse em agendamento.",
+    "pendencias": [
+      {
+        "descricao": "Olá, eu conheci a Dra Cristal no Instagram e desejo agendar uma consulta. Qual o valor ?",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Olá Karin, boa tarde! Seja bem vinda!!! 💐\n\nJá vou te passar todas as informações, mas para começarmo...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Perfeito Karin, saiba que a Dra. Cristal é uma endocrinologista especialista nesse assunto tem ajuda...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Que ótimo Karin 🫶\n\nEssa consulta pode ser tanto presencial quanto online, tem o valor de 700 reais, ...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Que ótimo Karin 🫶\n\nEssa consulta pode ser tanto presencial quanto online, tem o valor de 700 reais, ...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "fail"
+  },
+  {
+    "duration_minutes": 28959.816666666666,
+    "total_messages": 29,
+    "secretary_messages": 12,
+    "patient_messages": 17,
+    "num_interactions": "20",
+    "agendamento_keywords": 18,
+    "preco_keywords": 6,
+    "audio_media_messages": "0",
+    "patient_questions": "3",
+    "secretary_questions": "10",
+    "resumo_diario": "Conversa de 16/01/2025 entre Dra Cristal Endocrinologista e ~Fátima Martins. Tópicos discutidos: agendamento, preços, sintomas, exames. Status: agendamento em andamento.",
+    "pendencias": [
+      {
+        "descricao": "Olá Fátima, boa tarde! Seja bem vinda!!! 💐\n\nJá vou te passar todas as informações, mas para começarm...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "qual o valor da consulta, tbm",
+        "responsavel": "paciente",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Funciona assim: é realizada uma pré-consulta online rápida, com duração de no máximo 15 minutos para...",
+        "responsavel": "secretaria",
+        "tipo": "exame",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Funciona assim: é realizada uma pré-consulta online rápida, com duração de no máximo 15 minutos para...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      },
+      {
+        "descricao": "mas preciso que seja na primeira semana de Fevereiro",
+        "responsavel": "paciente",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Marcadinho Fátima 🌹\n\nData: 06/02/2025, Quinta-feira\nHora: 09:00h\nProfissional: Dra. Cristal Peters C...",
+        "responsavel": "secretaria",
+        "tipo": "pagamento",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "fail"
+  },
+  {
+    "duration_minutes": 1465.4166666666667,
+    "total_messages": 13,
+    "secretary_messages": 6,
+    "patient_messages": 7,
+    "num_interactions": "8",
+    "agendamento_keywords": 6,
+    "preco_keywords": 0,
+    "audio_media_messages": "0",
+    "patient_questions": "0",
+    "secretary_questions": "3",
+    "resumo_diario": "Conversa de 10/02/2025 entre Dra Cristal Endocrinologista e ~Alessandra. Tópicos discutidos: agendamento, sintomas, exames. Status: interesse em agendamento.",
+    "pendencias": [
+      {
+        "descricao": "Seja bem vinda. Lele!!! 💐\n\nJá vou te passar todas as informações, mas para começarmos, como os atend...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      },
+      {
+        "descricao": "Perfeito Lele, saiba que a Dra. Cristal é uma endocrinologista especialista nesse assunto tem ajudad...",
+        "responsavel": "secretaria",
+        "tipo": "informacao",
+        "status": "pendente"
+      }
+    ],
+    "alinhamento": {
+      "score_similaridade": 0,
+      "score_cobertura": 0,
+      "score_sequencia": 0,
+      "score_geral": 0,
+      "detalhes": "Conteúdo alinhado não fornecido"
+    },
+    "chat_type": "fail"
+  }
+]

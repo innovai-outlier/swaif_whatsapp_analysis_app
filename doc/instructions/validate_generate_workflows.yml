@@ -1,0 +1,30 @@
+instruction: "Validação e Geração de Workflows N8N"
+description: >
+  Configure scripts para validar e gerar workflows N8N programaticamente.
+actions:
+  - Create the file heavy/scripts/validate_workflow.py with the following content:
+    content: |
+      import jsonschema
+      import json
+
+      def validate_workflow(workflow_json, schema_path):
+          """Valida um workflow N8N contra um schema JSON."""
+          with open(schema_path, "r") as schema_file:
+              schema = json.load(schema_file)
+          jsonschema.validate(instance=workflow_json, schema=schema)
+  - Create the file heavy/scripts/workflow_generator.py with the following content:
+    content: |
+      def create_node(name, type, parameters):
+          """Gera um Node N8N no formato JSON."""
+          return {
+              "name": name,
+              "type": type,
+              "parameters": parameters,
+              "position": {"x": 0, "y": 0},
+          }
+
+      def assemble_workflow(nodes):
+          """Combina Nodes em um workflow completo."""
+          return {"nodes": nodes, "connections": {}}
+notes: >
+  Certifique-se de que os scripts estejam funcionando corretamente e sejam testados.

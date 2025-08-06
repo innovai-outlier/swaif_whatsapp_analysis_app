@@ -1,0 +1,8 @@
+instruction: "Testes e Validação"
+description: >
+  Execute testes automatizados e valide os workflows N8N.
+commands:
+  - pytest lite/tests
+  - python heavy/scripts/validate_workflow.py --workflow heavy/workflows/main_workflow.json --schema heavy/workflows/schema.json
+notes: >
+  Resolva quaisquer erros encontrados durante os testes ou validações.

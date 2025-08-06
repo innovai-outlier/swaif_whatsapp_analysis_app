@@ -1,0 +1,23 @@
+# SWAI WhatsApp Analyzer - Requirements
+# Dependências mínimas para máxima simplicidade
+
+# Core do Streamlit
+streamlit>=1.28.0
+
+# Análise de dados
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualizações
+plotly>=5.15.0
+
+# Processamento de texto (opcional)
+regex>=2023.6.3
+
+# Utilitários
+python-dotenv>=1.0.0
+
+# Para análise avançada (opcional)
+# scikit-learn>=1.3.0
+# matplotlib>=3.7.0
+# seaborn>=0.12.0

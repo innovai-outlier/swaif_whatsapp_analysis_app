@@ -1,0 +1,9 @@
+instruction: "Próximos Passos"
+description: >
+  Planeje as próximas etapas do desenvolvimento.
+actions:
+  - Define the database schema for SQL integration.
+  - Refine the modular structure based on feedback.
+  - Automate workflow generation using Copilot and Python scripts.
+notes: >
+  Documente as decisões e atualize o instruction file conforme necessário.

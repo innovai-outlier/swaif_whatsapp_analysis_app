@@ -1,0 +1,24 @@
+# Configuração SWAI para Streamlit
+# Desabilita navegação automática de páginas
+
+[server]
+enableStaticServing = false
+enableXsrfProtection = false
+
+[client]
+showErrorDetails = false
+toolbarMode = "minimal"
+
+[theme]
+base = "light"
+primaryColor = "#FF7F11"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#0A1128"
+
+[browser]
+gatherUsageStats = false
+
+# Configurações específicas para o SWAI
+[global]
+developmentMode = false
