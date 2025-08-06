@@ -14,10 +14,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Desabilitar navegação automática de páginas do Streamlit
-if hasattr(st, '_config'):
-    st._config.set_option('server.enableStaticServing', False)
-
 # Adicionar o diretório correto ao path
 current_dir = Path(__file__).parent
 swai_dir = current_dir / "swaif_whatsapp_analyzer"
@@ -30,7 +26,7 @@ try:
     from swai_ui_dashboard import show_dashboard
     from swai_ui_analysis import show_analysis
     from swai_ui_cost import show_cost_calculator
-    from swai_ui_config import show_configuration
+    from swai_ui_config import show_configuration 
     imports_successful = True
 except ImportError as e:
     imports_successful = False
