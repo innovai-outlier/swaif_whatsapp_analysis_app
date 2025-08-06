@@ -1,7 +1,12 @@
 import unittest
-from src.user_access import UserAccess
 import os
 import json
+import shutil
+import sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from src.user_access import UserAccess
 
 class TestUserAccess(unittest.TestCase):
 
@@ -55,6 +60,20 @@ class TestUserAccess(unittest.TestCase):
         """
         response = self.user_access.login_user("invalid@email.com", "wrongpassword")
         self.assertEqual(response, "Email ou senha incorretos.")
+
+    def test_creates_missing_directory(self):
+        """Garante que diretórios inexistentes sejam criados automaticamente."""
+        temp_dir = "data/temp_databases"
+        temp_db_path = os.path.join(temp_dir, "users.json")
+
+        if os.path.exists(temp_dir):
+            shutil.rmtree(temp_dir)
+
+        UserAccess(db_path=temp_db_path)
+        self.assertTrue(os.path.exists(temp_db_path))
+
+        if os.path.exists(temp_dir):
+            shutil.rmtree(temp_dir)
 
     @classmethod
     def tearDownClass(cls):
