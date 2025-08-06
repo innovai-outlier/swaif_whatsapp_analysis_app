@@ -14,6 +14,9 @@ class UserAccess:
         Garante que o arquivo de banco de dados JSON exista.
         """
         try:
+            db_dir = os.path.dirname(self.db_path)
+            if db_dir and not os.path.exists(db_dir):
+                os.makedirs(db_dir, exist_ok=True)
             if not os.path.exists(self.db_path):
                 with open(self.db_path, 'w') as db_file:
                     json.dump([], db_file)
@@ -60,7 +63,7 @@ class UserAccess:
                 users = json.load(db_file)
 
             if not users:
-                return "Nenhum usuário encontrado. Por favor, cadastre-se primeiro."
+                return "Email ou senha incorretos."
 
             for user in users:
                 if user['email'] == email and user['password'] == password:
