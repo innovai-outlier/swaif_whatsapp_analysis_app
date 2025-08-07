@@ -23,9 +23,13 @@ def configure(manager: SWAILiteManager) -> None:
 def _extract_phones(message: Dict[str, Any]) -> tuple[str, str]:
     """Return ``(lead_phone, secretary_phone)`` from a formatted message."""
 
-    if message.get("sender_type") == "lead":
+    sender_type = message.get("sender_type")
+    if sender_type == "lead":
         return message.get("sender_phone"), message.get("receiver_phone")
-    return message.get("receiver_phone"), message.get("sender_phone")
+    if sender_type == "secretary":
+        return message.get("receiver_phone"), message.get("sender_phone")
+    # Default assumption: sender is the lead when type is unknown
+    return message.get("sender_phone"), message.get("receiver_phone")
 
 
 def process_layer2_grouping(formatted_message: Dict[str, Any]) -> Dict[str, Any]:

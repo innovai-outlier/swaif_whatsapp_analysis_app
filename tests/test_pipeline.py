@@ -3,12 +3,14 @@
 from __future__ import annotations
 
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
+import json
 import time
 
 import pytest
 
 from integrations.database.sqlite_manager import SWAILiteManager
-from pipeline import layer2_grouper
+from pipeline import layer2_grouper, layer1_formatter
 
 
 def _setup_manager(tmp_path):
@@ -93,4 +95,52 @@ def test_grouping_100_messages_performance(tmp_path):
 
     assert count == 100
     assert duration < 5
+
+
+@pytest.mark.integration
+def test_store_n8n_real_data(tmp_path):
+    db_path = tmp_path / "db.sqlite"
+    manager = SWAILiteManager(str(db_path))
+
+    # Create temporary table for test
+    manager.conn.execute(
+        """
+        CREATE TABLE test_n8n_data (
+            sender_phone TEXT,
+            receiver_phone TEXT,
+            content TEXT,
+            message_type TEXT,
+            timestamp TEXT
+        )
+        """
+    )
+
+    data_path = Path("integrations/n8n/n8n_raw_data.json")
+    messages = json.loads(data_path.read_text())
+
+    for raw in messages:
+        formatted = layer1_formatter.format_message(raw)
+        manager.conn.execute(
+            "INSERT INTO test_n8n_data VALUES (?, ?, ?, ?, ?)",
+            (
+                formatted["sender_phone"],
+                formatted["receiver_phone"],
+                formatted["content"],
+                formatted.get("message_type"),
+                formatted["timestamp"],
+            ),
+        )
+
+    row = manager.conn.execute(
+        "SELECT sender_phone, receiver_phone, content, message_type, timestamp FROM test_n8n_data"
+    ).fetchone()
+
+    assert row["sender_phone"] == "5511999168646"
+    assert row["receiver_phone"] == "5511998681314"
+    assert row["content"] == "Boa Lee, parabéns e vamo que vamo. Abs"
+    assert row["message_type"] == "conversation"
+    assert row["timestamp"].startswith("2025-08-07T15:11:40.978")
+
+    manager.conn.execute("DELETE FROM test_n8n_data")
+    manager.close()
 

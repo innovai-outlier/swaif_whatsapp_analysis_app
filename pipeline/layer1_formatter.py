@@ -10,6 +10,7 @@ through the official Cloud API.
 from __future__ import annotations
 
 from datetime import datetime, timezone
+import hashlib
 from typing import Any, Dict
 
 
@@ -33,6 +34,29 @@ def _extract_content(data: Dict[str, Any]) -> str:
     if "content" in data:
         return str(data["content"])
     return ""
+
+
+def _sanitize_phone(raw: Any) -> str | None:
+    """Return only the numeric portion of a WhatsApp JID."""
+
+    if raw is None:
+        return None
+    return str(raw).split("@")[0]
+
+
+def _generate_message_id(data: Dict[str, Any]) -> str:
+    """Generate a deterministic identifier when none is provided."""
+
+    base = "-".join(
+        str(data.get(key, ""))
+        for key in (
+            "sender_raw_data",
+            "receiver_raw_data",
+            "timestamp",
+            "sent_message",
+        )
+    )
+    return hashlib.sha1(base.encode("utf-8")).hexdigest()
 
 
 def _normalize_timestamp(value: Any) -> str:
@@ -62,24 +86,29 @@ def format_message(data: Dict[str, Any]) -> Dict[str, Any]:
     ----------
     data:
         Raw message dictionary produced by the N8N webhook.  The
-        dictionary **must** contain at least ``id`` and ``timestamp``
-        fields.  ``from`` and ``to`` are used to identify sender and
-        receiver phone numbers.
+        dictionary may come directly from the Evolution API webhook used
+        in N8N.  When ``id`` is missing a deterministic identifier is
+        generated from the message contents.  ``sender_raw_data`` and
+        ``receiver_raw_data`` are normalised to phone numbers.
     """
 
     message_id = data.get("id") or data.get("message_id")
     if not message_id:
-        raise Layer1FormatError("message_id ausente")
+        message_id = _generate_message_id(data)
 
     timestamp = _normalize_timestamp(data.get("timestamp"))
 
+    sender_raw = data.get("sender_raw_data") or data.get("from")
+    receiver_raw = data.get("receiver_raw_data") or data.get("to")
+
     formatted = {
         "message_id": message_id,
-        "sender_phone": data.get("from"),
-        "receiver_phone": data.get("to"),
+        "sender_phone": _sanitize_phone(sender_raw),
+        "receiver_phone": _sanitize_phone(receiver_raw),
         "sender_type": data.get("sender_type"),
-        "content": _extract_content(data),
+        "content": data.get("sent_message") or _extract_content(data),
         "timestamp": timestamp,
+        "message_type": data.get("message_type"),
     }
 
     return formatted
