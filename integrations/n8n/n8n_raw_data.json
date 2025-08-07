@@ -1,0 +1,12 @@
+[
+  {
+    "host_n8n": "host.docker.internal:5678",
+    "evo_api_instance_name": "WAB-Diego Menescal",
+    "host_evoapi": "http://localhost:8080",
+    "sender_raw_data": "5511999168646@s.whatsapp.net",
+    "receiver_raw_data": "5511998681314@s.whatsapp.net",
+    "message_type": "conversation",
+    "sent_message": "Boa Lee, parabéns e vamo que vamo. Abs",
+    "timestamp": "2025-08-07T15:11:40.978Z"
+  }
+]
