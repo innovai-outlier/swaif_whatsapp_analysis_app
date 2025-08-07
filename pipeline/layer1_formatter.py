@@ -43,7 +43,7 @@ def _normalize_timestamp(value: Any) -> str:
 
     # Unix timestamps may come as integers or digit strings
     if isinstance(value, (int, float)) or (isinstance(value, str) and value.isdigit()):
-        return datetime.fromtimestamp(int(value)).isoformat()
+        return datetime.fromtimestamp(int(value), tz=timezone.utc).isoformat()
 
     # Attempt to parse ISO formatted strings; if parsing fails, keep raw
     if isinstance(value, str):
