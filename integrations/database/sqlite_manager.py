@@ -51,8 +51,8 @@ class SWAILiteManager:
         Returns
         -------
         Optional[int]
-            The row ID of the inserted (or existing) message. ``None`` is
-            returned if insertion was ignored.
+            The row ID of the inserted message. ``None`` is returned if
+            the message already existed and ``overwrite`` is ``False``.
         """
 
         columns = (
@@ -91,14 +91,32 @@ class SWAILiteManager:
             )
 
             if cursor.rowcount == 0:
-                # Record already existed; fetch its ID for reference
-                existing = self.conn.execute(
-                    "SELECT id FROM messages WHERE message_id = ?",
-                    (message["message_id"],),
-                ).fetchone()
-                return existing["id"] if existing else None
+                # Record already existed and was ignored
+                return None
 
             return cursor.lastrowid
+
+    def get_message_by_id(self, message_id: str) -> Optional[Dict[str, Any]]:
+        """Return a stored message given its ``message_id``.
+
+        Parameters
+        ----------
+        message_id:
+            Identifier used when the message was stored.
+
+        Returns
+        -------
+        Optional[Dict[str, Any]]
+            The message data as a regular dictionary or ``None`` if not
+            found.
+        """
+
+        cursor = self.conn.execute(
+            "SELECT * FROM messages WHERE message_id = ?",
+            (message_id,),
+        )
+        row = cursor.fetchone()
+        return dict(row) if row else None
 
     def close(self) -> None:
         self.conn.close()
