@@ -1,0 +1,91 @@
+### Comando Executado
+```
+docker-compose up -d
+```
+
+### Saída do Comando
+```
+ Volume "evo_api_redis_evo_data"  Creating
+ Volume "evo_api_redis_evo_data"  Created
+ Volume "evo_api_postgres_evo_data"  Creating
+ Volume "evo_api_postgres_evo_data"  Created
+ Container swaif_postgres_evo  Creating
+ Container redis_evo  Creating
+ Container redis_evo  Created
+ Container swaif_postgres_evo  Created
+ Container redis_evo  Starting
+ Container swaif_postgres_evo  Starting
+ Container swaif_postgres_evo  Started
+ Container redis_evo  Started
+```
+[2025-08-09 21:43:32] [SUCCESS] EVO API iniciado com sucesso!
+[2025-08-09 21:43:37] [INFO] Capturando logs detalhados de EVO API...
+
+### Logs Recentes (50 linhas)
+```
+swaif_postgres_evo  | 
+swaif_postgres_evo  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+swaif_postgres_evo  | creating subdirectories ... ok
+redis_evo           | 1:C 09 Aug 2025 21:43:32.340 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+swaif_postgres_evo  | selecting dynamic shared memory implementation ... posix
+swaif_postgres_evo  | selecting default max_connections ... 100
+swaif_postgres_evo  | selecting default shared_buffers ... 128MB
+redis_evo           | 1:C 09 Aug 2025 21:43:32.340 * Redis version=8.2.0, bits=64, commit=00000000, modified=1, pid=1, just started
+swaif_postgres_evo  | selecting default time zone ... America/Sao_Paulo
+swaif_postgres_evo  | creating configuration files ... ok
+redis_evo           | 1:C 09 Aug 2025 21:43:32.340 * Configuration loaded
+redis_evo           | 1:M 09 Aug 2025 21:43:32.341 * monotonic clock: POSIX clock_gettime
+swaif_postgres_evo  | running bootstrap script ... ok
+swaif_postgres_evo  | sh: locale: not found
+swaif_postgres_evo  | 2025-08-09 21:43:33.022 -03 [36] WARNING:  no usable system locales were found
+swaif_postgres_evo  | performing post-bootstrap initialization ... ok
+swaif_postgres_evo  | syncing data to disk ... ok
+swaif_postgres_evo  | 
+swaif_postgres_evo  | 
+swaif_postgres_evo  | Success. You can now start the database server using:
+swaif_postgres_evo  | 
+swaif_postgres_evo  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+redis_evo           | 1:M 09 Aug 2025 21:43:32.346 * Running mode=standalone, port=6379.
+redis_evo           | 1:M 09 Aug 2025 21:43:32.348 * Server initialized
+swaif_postgres_evo  | 
+swaif_postgres_evo  | initdb: warning: enabling "trust" authentication for local connections
+swaif_postgres_evo  | initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+swaif_postgres_evo  | waiting for server to start....2025-08-09 21:43:34.146 -03 [42] LOG:  starting PostgreSQL 15.13 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+swaif_postgres_evo  | 2025-08-09 21:43:34.151 -03 [42] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+swaif_postgres_evo  | 2025-08-09 21:43:34.161 -03 [45] LOG:  database system was shut down at 2025-08-09 21:43:33 -03
+swaif_postgres_evo  | 2025-08-09 21:43:34.170 -03 [42] LOG:  database system is ready to accept connections
+swaif_postgres_evo  |  done
+swaif_postgres_evo  | server started
+swaif_postgres_evo  | CREATE DATABASE
+swaif_postgres_evo  | 
+swaif_postgres_evo  | 
+swaif_postgres_evo  | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+swaif_postgres_evo  | 
+swaif_postgres_evo  | waiting for server to shut down....2025-08-09 21:43:34.313 -03 [42] LOG:  received fast shutdown request
+redis_evo           | 1:M 09 Aug 2025 21:43:32.348 * Ready to accept connections tcp
+swaif_postgres_evo  | 2025-08-09 21:43:34.317 -03 [42] LOG:  aborting any active transactions
+swaif_postgres_evo  | 2025-08-09 21:43:34.321 -03 [42] LOG:  background worker "logical replication launcher" (PID 48) exited with exit code 1
+swaif_postgres_evo  | 2025-08-09 21:43:34.321 -03 [43] LOG:  shutting down
+swaif_postgres_evo  | 2025-08-09 21:43:34.324 -03 [43] LOG:  checkpoint starting: shutdown immediate
+swaif_postgres_evo  | 2025-08-09 21:43:34.425 -03 [43] LOG:  checkpoint complete: wrote 921 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.026 s, sync=0.066 s, total=0.104 s; sync files=301, longest=0.006 s, average=0.001 s; distance=4238 kB, estimate=4238 kB
+swaif_postgres_evo  | 2025-08-09 21:43:34.434 -03 [42] LOG:  database system is shut down
+swaif_postgres_evo  |  done
+swaif_postgres_evo  | server stopped
+swaif_postgres_evo  | 
+swaif_postgres_evo  | PostgreSQL init process complete; ready for start up.
+swaif_postgres_evo  | 
+swaif_postgres_evo  | 2025-08-09 21:43:34.549 -03 [1] LOG:  starting PostgreSQL 15.13 on x86_64-pc-linux-musl, compiled by gcc (Alpine 14.2.0) 14.2.0, 64-bit
+swaif_postgres_evo  | 2025-08-09 21:43:34.549 -03 [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+swaif_postgres_evo  | 2025-08-09 21:43:34.549 -03 [1] LOG:  listening on IPv6 address "::", port 5432
+swaif_postgres_evo  | 2025-08-09 21:43:34.556 -03 [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+swaif_postgres_evo  | 2025-08-09 21:43:34.568 -03 [58] LOG:  database system was shut down at 2025-08-09 21:43:34 -03
+swaif_postgres_evo  | 2025-08-09 21:43:34.578 -03 [1] LOG:  database system is ready to accept connections
+```
+
+### Status dos Containers
+```
+NAME                 IMAGE                COMMAND                  SERVICE        CREATED         STATUS                   PORTS
+redis_evo            redis:alpine         "docker-entrypoint.s�Ǫ"   redis_evo      6 seconds ago   Up 6 seconds (healthy)   0.0.0.0:6380->6379/tcp
+swaif_postgres_evo   postgres:15-alpine   "docker-entrypoint.s�Ǫ"   postgres_evo   6 seconds ago   Up 6 seconds (healthy)   0.0.0.0:5433->5432/tcp
+```
+[2025-08-09 21:43:38] [INFO] Verificando saúde dos containers...

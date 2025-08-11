@@ -1,0 +1,68 @@
+services:
+  swaif_postgres:
+    image: postgres:15-alpine
+    container_name: swaif_postgres
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_DB=${POSTGRES_SWAI_DB}
+      - POSTGRES_USER=${POSTGRES_SWAI_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_SWAI_PASSWORD}
+    ports:
+      - "${POSTGRES_SWAI_PORT}:5432"
+    volumes:
+      - swaif_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_SWAI_USER} -d ${POSTGRES_SWAI_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 20s
+    networks:
+      - swaif_net
+
+  swaif_streamlit_app:
+    image: python:3.11-slim
+    container_name: swaif_streamlit_app
+    env_file:
+      - .env
+    environment:
+      - TZ=${TZ}
+      - SWAI_DATABASE_URL=postgresql://${POSTGRES_SWAI_USER:-swaif_user}:${POSTGRES_SWAI_PASSWORD:-swaif_pass}@postgres_swaif:5432/${POSTGRES_SWAI_DB:-swaif_db}
+      - SWAI_DB_PATH=${SWAI_DB_PATH:-/data/swai.db}
+      - SWAI_RAW_DIR=${SWAI_RAW_DIR:-/data/n8n_out}
+      - SWAI_LOG_DIR=${SWAI_LOG_DIR:-/data/logs}
+      - EVO_API_HOST=${EVO_API_HOST:-http://evolutionapi:8080}
+      - N8N_HOST=${N8N_HOST:-http://n8n:5678}
+    working_dir: /app
+    volumes:
+      - ../../:/app
+      - swaif_data:/data
+    command: >
+      sh -lc "
+      pip install --upgrade pip &&
+      if [ -f requirements.txt ]; then pip install -r requirements.txt; fi &&
+      python -m pip install streamlit &&
+      streamlit run run_swai.py --server.port=${SWAIF_STREAMLIT_PORT:-8501} --server.address=0.0.0.0
+      "
+    ports:
+      - "${SWAIF_STREAMLIT_PORT:-8501}:8501"
+    depends_on:
+      swaif_postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8501/"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 20s
+    networks:
+      - swaif_net
+
+volumes:
+  swaif_data:
+  swaif_postgres_data:
+
+networks:
+  swaif_net:
+    external: true

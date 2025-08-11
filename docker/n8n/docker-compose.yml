@@ -1,0 +1,28 @@
+version: "3.8"
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    env_file:
+      - .env
+    ports:
+      - "5678:5678"
+    volumes:
+      - ./workflows:/workflows:ro
+    networks:
+      - swaif_net
+  n8n-importer:
+    image: n8nio/n8n:latest
+    env_file:
+      - .env
+    depends_on:
+      n8n:
+        condition: service_started
+    volumes:
+      - ./workflows:/workflows:ro
+    entrypoint: /bin/sh -lc "n8n import:workflow --separate --input=/workflows"
+    restart: "no"
+    networks:
+      - swaif_net
+networks:
+  swaif_net:
+    external: true

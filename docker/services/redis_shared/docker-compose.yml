@@ -1,0 +1,31 @@
+services:
+  swaif_redis:
+    image: redis:alpine
+    container_name: swaif_redis
+    env_file:
+      - .env
+    command: >
+      sh -lc "
+      if [ -n \"$REDIS_PASSWORD\" ]; then
+        exec redis-server --requirepass $REDIS_PASSWORD;
+      else
+        exec redis-server;
+      fi
+      "
+    ports:
+      - "${REDIS_PORT}:6379"
+    volumes:
+      - swaif_redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 10s
+    networks:
+      - swaif_net
+volumes:
+  swaif_redis_data:
+networks:
+  swaif_net:
+    external: true

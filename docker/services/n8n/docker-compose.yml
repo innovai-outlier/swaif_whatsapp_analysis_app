@@ -1,0 +1,119 @@
+services:
+  swaif_redis_n8n:
+    image: redis:alpine
+    container_name: swaif_redis_n8n
+    command: >
+      sh -lc "
+      if [ -n \"$REDIS_N8N_PASSWORD\" ]; then
+        exec redis-server --requirepass $REDIS_N8N_PASSWORD;
+      else
+        exec redis-server;
+      fi
+      "
+    env_file:
+      - .env
+    ports:
+      - "${REDIS_N8N_PORT:-6381}:6379"
+    volumes:
+      - swaif_redis_n8n_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 10s
+    networks:
+      - swaif_net
+
+  swaif_postgres_n8n:
+    image: postgres:15-alpine
+    container_name: swaif_postgres_n8n
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_DB=swaif_n8n_db
+      - POSTGRES_USER=swaif_n8n_user
+      - POSTGRES_PASSWORD=C120915.n
+    ports:
+      - "${POSTGRES_N8N_PORT:-5434}:5432"
+    volumes:
+      - swaif_postgres_n8n_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U swaif_n8n_user -d swaif_n8n_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 20s
+    networks:
+      - swaif_net
+
+  swaif_n8n:
+    image: n8nio/n8n:latest
+    container_name: swaif_n8n
+    env_file:
+      - .env
+    environment:
+      - TZ=${TZ}
+      - N8N_HOST=n8n
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - GENERIC_TIMEZONE=${TZ}
+      - DB_TYPE=postgresdb
+      - DB_POSTGRESDB_HOST=swaif_postgres_n8n
+      - DB_POSTGRESDB_PORT=5432
+      - DB_POSTGRESDB_DATABASE=swaif_n8n_db
+      - DB_POSTGRESDB_USER=swaif_n8n_user
+      - DB_POSTGRESDB_PASSWORD=C120915.n
+      - QUEUE_BULL_REDIS_HOST=swaif_redis_n8n
+      - QUEUE_BULL_REDIS_PORT=6379
+    ports:
+      - "${N8N_HTTP_PORT:-5678}:5678"
+    volumes:
+      - swaif_n8n_data:/home/node/.n8n
+      - ../../integrations/n8n:/data/n8n_out
+      - ./workflows:/workflows:ro
+    depends_on:
+      swaif_redis_n8n:
+        condition: service_healthy
+      swaif_postgres_n8n:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:5678/"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 20s
+    networks:
+      - swaif_net
+
+  swaif_n8n_importer:
+    image: n8nio/n8n:latest
+    container_name: swaif_n8n_importer
+    env_file:
+      - .env
+    depends_on:
+      swaif_n8n:
+        condition: service_healthy
+    volumes:
+      - swaif_n8n_data:/home/node/.n8n
+      - ./workflows:/workflows:ro
+    entrypoint: >
+      /bin/sh -lc "
+      if [ -n \"$N8N_OWNER_EMAIL\" ] && [ -n \"$N8N_OWNER_PASSWORD\" ]; then
+        n8n user-management:reset --instanceOwnerEmail \"$N8N_OWNER_EMAIL\" --instanceOwnerPassword \"$N8N_OWNER_PASSWORD\" || true;
+      fi;
+      n8n import:workflow --separate --input=/workflows;
+      echo '✅ Import concluído';
+      "
+    restart: "no"
+    networks:
+      - swaif_net
+
+volumes:
+  swaif_n8n_data:
+  swaif_postgres_n8n_data:
+  swaif_redis_n8n_data:
+
+networks:
+  swaif_net:
+    external: true

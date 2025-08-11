@@ -1,0 +1,87 @@
+services:
+  redis_evo:
+    image: redis:alpine
+    container_name: redis_evo
+    command: >
+      sh -lc "
+      if [ -n \"$REDIS_EVO_PASSWORD\" ]; then
+        exec redis-server --requirepass $REDIS_EVO_PASSWORD;
+      else
+        exec redis-server;
+      fi
+      "
+    env_file:
+      - .env
+    ports:
+      - "${REDIS_EVO_PORT:-6379}:6379"
+    volumes:
+      - redis_evo_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 10s
+    networks:
+      - swaif_net
+
+  postgres_evo:
+    image: postgres:15-alpine
+    container_name: swaif_postgres_evo
+    env_file:
+      - .env
+    environment:
+      - POSTGRES_DB=${POSTGRES_EVO_DB:-evo_db}
+      - POSTGRES_USER=${POSTGRES_EVO_USER:-evo_user}
+      - POSTGRES_PASSWORD=${POSTGRES_EVO_PASSWORD:-evo_pass}
+    ports:
+      - "${POSTGRES_EVO_PORT:-5432}:5432"
+    volumes:
+      - postgres_evo_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_EVO_USER:-evo_user} -d ${POSTGRES_EVO_DB:-evo_db}"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 20s
+    networks:
+      - swaif_net
+
+  # evolutionapi:
+  #   image: evoapicloud/evolution-api:latest
+  #   container_name: evolutionapi
+  #   env_file:
+  #     - .env
+  #   environment:
+  #     - TZ=${TZ}
+  #     - NODE_ENV=${NODE_ENV}
+  #     - AUTHENTICATION_API_KEY=${EVO_API_ADMIN_TOKEN}
+  #     - EVO_API_INSTANCE_NAME=${EVO_API_INSTANCE_NAME}
+  #     - DATABASE_URL=postgresql://${POSTGRES_EVO_USER:-evo_user}:${POSTGRES_EVO_PASSWORD:-evo_pass}@postgres_evo:5432/${POSTGRES_EVO_DB:-evo_db}
+  #     - REDIS_HOST=redis_evo
+  #     - REDIS_PORT=6379
+  #   ports:
+  #     - "${EVO_API_HTTP_PORT:-8080}:8080"
+  #   depends_on:
+  #     redis_evo:
+  #       condition: service_healthy
+  #     postgres_evo:
+  #       condition: service_healthy
+  #   healthcheck:
+  #     test: ["CMD", "wget", "-qO-", "http://localhost:8080/health"]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 15
+  #     start_period: 20s
+  #   networks:
+  #     - swaif_net
+  #   # NOTA: Esta imagem requer autenticação no GitHub Container Registry
+  #   # Para usar, configure o acesso ao ghcr.io ou use uma alternativa pública
+
+volumes:
+  postgres_evo_data:
+  redis_evo_data:
+
+networks:
+  swaif_net:
+    external: true
